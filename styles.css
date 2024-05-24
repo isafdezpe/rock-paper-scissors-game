@@ -29,7 +29,7 @@ section {
     display: flex;
     justify-content: space-between;
     padding: 20px 32px;
-    width: 120%;
+    width: 100%;
     border: 2px solid #606e85;
     border-radius: 16px;
 }
@@ -83,7 +83,7 @@ section {
     aspect-ratio: 1/1;
     gap: 45px;
     padding: 50px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .row {
@@ -107,25 +107,52 @@ section {
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    border: none;
+    border: solid 13px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-button img {
+    height: 50px;
+}
+
+.primary-button:hover img {
+    animation: rotate-icon 200ms linear 0.5s 6 alternate forwards running;
+}
+
+@keyframes rotate-icon {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(30deg);
+      scale: 1.05;
+    }
 }
 
 .rock {
-    background: radial-gradient(#dc2e4e, #dd405d);
+    border-color: #dd405d;
+    box-shadow: 0px 3px 0px 0px #dc2e4e;
 }
 
 .paper {
-    background: radial-gradient(#4865f4, #5671f5);
+    border-color: #5671f5;
+    box-shadow: 0px 3px 0px 0px #4865f4;
 }
 
 .scissors {
-    background: radial-gradient(#ec9e0e, #eca922);
+    border-color: #eca922;
+    box-shadow: 0px 3px 0px 0px #ec9e0e;
 }
 
 .lizard {
-    background: radial-gradient(#834fe3, #8c5de5);
+    border-color: #8c5de5;
+    box-shadow: 0px 3px 0px 0px #834fe3;
 }
 
 .spock {
-    background: radial-gradient(#40b9ce, #52bed1);
+    border-color: #52bed1;
+    box-shadow: 0px 3px 0px 0px #40b9ce;
 }
