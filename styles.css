@@ -72,3 +72,60 @@ section {
     font-size: 16px;
     padding: 4px 24px;
 }
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    aspect-ratio: 1/1;
+    gap: 45px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.first-row {
+    justify-content: center;
+}
+
+.second-row {
+    justify-content: space-between;
+}
+
+.third-row {
+    justify-content: space-around;
+}
+
+.primary-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: none;
+}
+
+.rock {
+    background: radial-gradient(#dc2e4e, #dd405d);
+}
+
+.paper {
+    background: radial-gradient(#4865f4, #5671f5);
+}
+
+.scissors {
+    background: radial-gradient(#ec9e0e, #eca922);
+}
+
+.lizard {
+    background: radial-gradient(#834fe3, #8c5de5);
+}
+
+.spock {
+    background: radial-gradient(#40b9ce, #52bed1);
+}
