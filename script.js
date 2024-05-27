@@ -18,7 +18,21 @@ playButton.addEventListener('click', playAgain);
 
 const options = ["rock", "paper", "scissors", "lizard", "spock"];
 
-var score = 0;
+const game_hierarchy = {
+    "scissors": ["paper", "lizard"],
+    "paper": ["rock", "spock"],
+    "rock": ["lizard", "scissors"],
+    "lizard": ["spock", "paper"],
+    "spock": ["scissors", "rock"]
+}
+
+const RESULT_MESSAGE = {
+    'win': "YOU WIN",
+    'lose': "YOU LOSE",
+    'draw': "DRAW"
+}
+
+let score = 0;
 
 function selectOption(option) {
     var userOption = option;    
@@ -28,12 +42,9 @@ function selectOption(option) {
     
     displayOption(userOption, "#user-selection div");
 
-    var win = true;
-    document.getElementById('winner-msg').innerHTML = win ? "YOU WIN" : "YOU LOSE";
-
     setTimeout(() => {
         displayOption(machineOption, "#machine-selection div");
-        displayResults();
+        displayResults(getResults(userOption, machineOption));
     } , 1000);
 }
 
@@ -54,10 +65,21 @@ function displayOption(option, selector) {
     document.querySelector(selector).appendChild(img);
 }
 
-function displayResults(win) {
+function getResults(userOption, machineOption) {
+    if (userOption == machineOption) {
+        return 'draw';
+    } else if (game_hierarchy[userOption].includes(machineOption)) {
+        return 'win';
+    } else {
+        return 'lose';
+    }
+}
+
+function displayResults(result) {
     setTimeout(() => {
+        document.getElementById('winner-msg').innerHTML = RESULT_MESSAGE[result];
         document.querySelector(".results-info").setAttribute('style', "display:" + "flex");
-        if (win) {
+        if (result == 'win') {
             score++;
             document.querySelector(".score-container .number").innerHTML = score;
         }
