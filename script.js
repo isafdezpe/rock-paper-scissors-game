@@ -16,6 +16,12 @@ rockButton.addEventListener('click',  () => selectOption('rock'));
 const playButton = document.getElementById('play');
 playButton.addEventListener('click', playAgain);
 
+const rulesButton = document.getElementById('rules');
+rulesButton.addEventListener('click', openRules);
+
+const closeButton = document.getElementById('close-dialog');
+closeButton.addEventListener('click', closeRules);
+
 const options = ["rock", "paper", "scissors", "lizard", "spock"];
 
 const game_hierarchy = {
@@ -100,4 +106,12 @@ function playAgain() {
     
     document.querySelector("#user-selection div").removeChild(document.querySelector("#user-selection div img"));
     document.querySelector("#machine-selection div").removeChild(document.querySelector("#machine-selection div img"));
+}
+
+function openRules() {
+    document.querySelector("dialog").showModal();
+}
+
+function closeRules() {
+    document.querySelector("dialog").close();
 }

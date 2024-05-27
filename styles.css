@@ -39,6 +39,10 @@ section {
     font-weight: 700;
 }
 
+button {
+    cursor: pointer;
+}
+
 .score-container {
     display: flex;
     flex-direction: column;
@@ -62,7 +66,7 @@ section {
     font-size: 48px;
 }
 
-.rules {
+#rules {
     background: none;
     border: 2px solid #606e85;
     border-radius: 8px;
@@ -107,7 +111,6 @@ section {
     height: 100px;
     border-radius: 100px;
     border: solid 13px;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +170,6 @@ section {
     border-radius: 6px;
     border: none;
     padding: 10px 45px;
-    cursor: pointer;
 }
 
 .results-container div div {
@@ -183,7 +185,6 @@ section {
     height: 170px;
     border-radius: 100px;
     border-width: 25px;
-    cursor: auto;
     background-color: #fff;
 }
 
@@ -210,4 +211,26 @@ section {
 .spock {
     border-color: #52bed1;
     box-shadow: 0px 3px 0px 0px #40b9ce;
+}
+
+dialog {
+    background-color: #fff;
+    color: #1f3756;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    padding: 30px;
+}
+
+.rules-title {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.rules-title button {
+    border: none;
+    background-color: transparent;
 }
