@@ -80,7 +80,7 @@ button {
 .game-container {
     display: flex;
     flex-direction: column;
-    background-image: url(/images/bg-pentagon.svg);
+    background-image: url(./images/bg-pentagon.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 500px;
