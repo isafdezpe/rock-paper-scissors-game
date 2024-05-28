@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/818shots_so.png)
+
 
 ### Links
 
