@@ -23,33 +23,26 @@ Users should be able to:
 
 - View the optimal layout for the game depending on their device's screen size
 - Play Rock, Paper, Scissors against the computer
-- Maintain the state of the score after refreshing the browser _(optional)_
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer 
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/818shots_so.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/isafdezpe/rock-paper-scissors-game](https://github.com/isafdezpe/rock-paper-scissors-game)
+- Live Site URL: [https://isafdezpe.github.io/rock-paper-scissors-game/](https://isafdezpe.github.io/rock-paper-scissors-game/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5 
+- CSS
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 - Javascript
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-
+  
 
 ### Useful resources
 
@@ -58,5 +51,5 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@isafdezpe](https://www.frontendmentor.io/profile/isafdezpe)
-- Linkedin - [María Isabel Fernández Pérez](https://www.linkedin.com/in/m-isabel-fdez-perez/)
+- Linkedin - [María Isabel Fernández Pérez](https://www.linkedin.com/in/isabelfdezpe/)
 
