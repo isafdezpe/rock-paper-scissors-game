@@ -27,6 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
+![](https://github.com/isafdezpe/rock-paper-scissors-game/assets/43760042/37b96c82-6fe8-4241-ba40-b2a5fc432f38)
 
 
 ### Links
